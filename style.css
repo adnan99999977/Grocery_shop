@@ -175,7 +175,9 @@ nav img {
 /* offers sec */
 .offers {
   max-width: 80%;
-  margin: 80px auto;
+  margin:auto;
+  margin-top: 80px;
+  margin-bottom: 10px;
   display: flex;
   gap: 20px;
   color: #ffffff;
@@ -241,11 +243,16 @@ nav img {
   align-items: center;
   border-radius: 10px;
   padding: 20px;
+  top: 200px;
+  position: relative;
+  z-index: 1;
+  
 }
 .submit_info h3{
   font-size: 2rem;
   font-weight: 600;
   margin: 20px 0;
+  color: green;
 }
 .submit_info p{
   font-size: 1.1rem;
@@ -260,6 +267,36 @@ nav img {
   border: none;
   border-radius: 5px;
   
+}
+/* footer section */
+footer{
+  max-width: 100%;
+  height: 500px;
+  background-color:rgba(23, 152, 0, 1) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 40px 70px;
+  color: white;
+  position: relative;
+}
+.foot_img_p {
+  width: 30%;
+}
+.foot_img_p p{
+  margin-top: 30px;
+}
+.foot_list ul{
+  list-style: none;
+}
+.foot_list ul li {
+  margin-bottom: 10px;
+  
+}
+.foot_p_logos img{
+  margin-top: 20px;
+    filter: brightness(0) invert(1);
+
 }
 
 @media screen and (max-width: 550px) {
@@ -367,4 +404,46 @@ nav img {
     margin-left: 0px;
     padding-left: 10px;
   }
+  .submit_section {
+  max-width: 90%;
+  flex-direction: column;
+}
+.submit_img img{
+  width:80%;
+  margin-left: 40px;
+}
+.submit_info h3{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.submit_info p{
+  font-size: .8rem;
+}
+.submit_info{
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.submit_info input{
+  width: 200px;
+  margin: 20px auto;
+  
+}
+footer{
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  height: 690px;
+  margin-left: 0px;
+}
+.foot_img_p img{
+  width: 140px;
+}
+.foot_img_p {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.foot_list{
+  margin-bottom: 30px;
+}
 }
